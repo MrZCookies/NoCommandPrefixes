@@ -1,0 +1,7 @@
+name: NoCommandPrefixes
+version: '${project.version}'
+main: com.mrzcookie.nocommandprefixes.NoCommandPrefixes
+api-version: 1.18
+authors: [ MrZCookie ]
+description: Disables the commands with fallback prefixes.
+website: mrzcookie.com
