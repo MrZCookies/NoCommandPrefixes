@@ -62,18 +62,22 @@ public final class NoCommandPrefixes extends JavaPlugin implements Listener {
 
     @EventHandler
     public void onPlayerCommandSend(PlayerCommandSendEvent event) {
+        Set<String> commandsRemoved = new HashSet<>();
+
         for (String command : event.getCommands()) {
             if (getConfig().getBoolean("Disable-All-Prefixes")) {
                 if (command.contains(":")) {
-                    event.getCommands().remove(command);
+                    commandsRemoved.add(command);
                 }
             }
             for (String prefix : getConfig().getStringList("Prefixes")) {
                 if (command.contains(prefix + ":")) {
-                    event.getCommands().remove(command);
+                    commandsRemoved.add(command);
                 }
             }
         }
+
+        event.getCommands().removeAll(commandsRemoved);
     }
 
     private Object getPrivateField(Object object, String field) throws SecurityException, NoSuchFieldException, IllegalArgumentException, IllegalAccessException {
