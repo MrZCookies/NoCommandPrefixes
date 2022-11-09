@@ -1,18 +1,23 @@
 # NoCommandPrefixes
-A way to remove the ugly fallback prefix on commands.
+A plugin to remove command fallback prefixes
 
-## Author
-+ [MrZCookie](https://gitlab.com/mrzcookie)
+### Contributors
++ MrZCookie ([Gitlab](https://gitlab.com/mrzcookie))
++ Pyr ([Github](https://github/pyrbu))
 
-## Config
+### Config
 
 ```
-# Interval to check for a command with prefix.
-Interval: 180
-# Disable all commands with a prefix.
+# Periodically check the command list to see if new commands were added?
+Periodically-Check: false
+
+# How often should the command list be checked for new commands (in seconds)
+Interval: 60
+
+# Should all commands with ":" be disabled?
 Disable-All-Prefixes: true
-# Prefixes to disable.
+
+# Prefixes that should be disabled (or enabled if Disable-All-Prefixes is true)
 Prefixes:
   - minecraft
-  - bukkit
 ```

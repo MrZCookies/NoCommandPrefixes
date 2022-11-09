@@ -1,7 +1,15 @@
-name: NoCommandPrefixes
-version: '${project.version}'
-main: com.mrzcookie.nocommandprefixes.NoCommandPrefixes
-api-version: 1.19
-authors: [ MrZCookie ]
-description: Disables the commands with fallback prefixes.
-website: mrzcookie.com
+name: "NoCommandPrefixes"
+description: "Disables the commands with fallback prefixes."
+website: "https://mrzcookie.com"
+authors:
+  - "MrZCookie"
+  - "Pyr#6969"
+
+main: "com.mrzcookie.nocommandprefixes.FallbackRemoverPlugin"
+version: "${project.version}"
+api-version: "1.13"
+
+commands:
+  reloadfallbackremover:
+    aliases: ["reloadfb"]
+    permission: "fallbackremover.reload"

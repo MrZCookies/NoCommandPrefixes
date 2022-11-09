@@ -1,8 +1,12 @@
-# Interval to check for a command with prefix.
-Interval: 180
-# Disable all commands with a prefix.
+# Periodically check the command list to see if new commands were added?
+Periodically-Check: false
+
+# How often should the command list be checked for new commands (in seconds)
+Interval: 60
+
+# Should all commands with ":" be disabled?
 Disable-All-Prefixes: true
-# Prefixes to disable.
+
+# Prefixes that should be disabled (or enabled if Disable-All-Prefixes is true)
 Prefixes:
   - minecraft
-  - bukkit
