@@ -2,8 +2,8 @@
 A plugin to remove command fallback prefixes
 
 ### Contributors
-+ MrZCookie ([Gitlab](https://gitlab.com/mrzcookie))
-+ Pyr ([Github](https://github/pyrbu))
++ [MrZCookie]https://github.com/mrzcookies)
++ [Pyr](https://github/pyrbu)
 
 ### Config
 
