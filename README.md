@@ -2,7 +2,7 @@
 A plugin to remove command fallback prefixes
 
 ### Contributors
-+ [MrZCookie]https://github.com/mrzcookies)
++ [MrZCookie](https://github.com/mrzcookies)
 + [Pyr](https://github/pyrbu)
 
 ### Config
