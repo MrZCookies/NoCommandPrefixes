@@ -1,5 +1,6 @@
 package com.mrzcookie.nocommandprefixes;
 
+import org.bstats.bukkit.Metrics;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.SimpleCommandMap;
@@ -23,6 +24,8 @@ public final class FallbackRemoverPlugin extends JavaPlugin implements Listener 
     public void onEnable() {
         saveDefaultConfig();
         reload();
+
+        new Metrics(this, 16865);
 
         if (cachedKnownCommands == null) {
             getLogger().severe("Failed to get known command list, disabling...");

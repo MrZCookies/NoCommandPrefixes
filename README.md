@@ -21,3 +21,5 @@ Disable-All-Prefixes: true
 Prefixes:
   - minecraft
 ```
+## BStats
+[![](https://bstats.org/signatures/bukkit/nocommandprefixes.svg)](https://bstats.org/plugin/bukkit/NoCommandPrefixes/16865)
